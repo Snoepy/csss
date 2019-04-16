@@ -1,0 +1,7 @@
+ErrorDocument 403 https://www.franssnoek.nl/error/forbidden.html
+ErrorDocument 404 https://www.franssnoek.nl/error/page-not-found.html
+ErrorDocument 500 https://www.franssnoek.nl/error/internal-server-error.html
+
+RewriteEngine On
+
+RewriteRule ^shop/?$ index.php [NC,L]

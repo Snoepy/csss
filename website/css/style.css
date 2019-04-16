@@ -1,0 +1,294 @@
+html, body {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	background-color: #f1f1f1;
+	font-size: 15px;
+	line-height: 1.5;
+	scroll-behavior: smooth;
+}
+
+body {
+
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    width: 5px;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #02daa0;
+}
+
+::selection {
+	color: #fff;
+	background: #02daa0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	width: 100%;
+	line-height: 1;
+}
+
+h2 {
+	font-size: 35px;
+}
+
+/*------------------------------------------*/
+/*---------------- HEADER ------------------*/
+/*------------------------------------------*/
+
+header {
+	text-align: left;
+	background-color: black;
+	color: white;
+	font-weight: 600;
+	list-style-type: none;
+	position: fixed;
+	float: left;
+	width: 100%;
+	top: 0;
+	z-index: 999999999;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.right {
+	float: right!important;
+}
+
+.left {
+	float: left!important;
+}
+
+.header_button a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px 15px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-weight: 500;
+}
+
+.header_button a:hover {
+	background-color: #f1f1f1;
+	color: black;
+}
+
+.active a {
+	background-color: #f1f1f1;
+	color: black;
+}
+
+
+
+/*------------------------------------------*/
+/*----------------- BODY -------------------*/
+/*------------------------------------------*/
+
+
+.body {
+	margin-top: 42px;
+}
+
+.wrapper {
+	max-width: 70%;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.field {
+	width: 100%;
+	padding: 15px;
+	border: 2px solid #ccc;
+	font-size: inherit;
+	margin: 10px 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.button {
+	margin: 10px 0;
+	padding: 10px 15px;
+	border: 2px solid #000;
+	background-color: transparent;
+	color: #000;
+	transition: 0.3s;
+	cursor: pointer;
+	outline: none;
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+}
+
+.button:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.concept {
+	font-weight: bold;
+}
+
+.half {
+	width: 50%;
+	float: left;
+	margin: 0 auto;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.shootout {
+	margin-top: 50px;
+	width: 100%;
+	float: left;
+}
+
+.link {
+	color: #02daa0;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.link:hover {
+	opacity: 0.6;
+}
+
+.info, .section {
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.portfolio {
+	float: left;
+}
+
+.PortfolioImage {
+	margin-top: 30px;
+}
+
+.PortfolioImage:first-child {
+	margin-top: 0;
+}
+
+.image {
+	padding: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 10px 0;
+	display: inline-block;
+}
+
+.third {
+	width: 33.3%;
+	float: left;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/*.photos {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+}
+
+.photobox, .photobox1 {
+	display: grid;
+	grid-column-gap: 20px;
+}
+
+.photobox1 {
+	grid-row-start: 1;
+	grid-row-end: 3;
+}*/
+
+.photos {
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.column {
+	flex: 1000%;
+	max-width: 33%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+/*------------------------------------------*/
+/*---------------- FOOTER ------------------*/
+/*------------------------------------------*/
+
+footer {
+	width: 100%;
+	float: left;
+	background-color: #616161;
+	padding: 30px 0;
+	text-align: center;
+	color: #fff;
+	margin-top: 50px;
+}
+
+/*------------------------------------------*/
+/*------------- RESPONSIVENESS -------------*/
+/*------------------------------------------*/
+
+@media only screen and (max-width: 1100px){
+	.third {
+		width: 50%;
+	}
+
+	.column {
+		max-width: 50%;
+	}
+}
+
+@media only screen and (max-width: 700px){
+	.half {
+		width: 100%;
+		padding: 0;
+	}
+
+	.portfolio {
+		margin-top: 40px;
+		float: left;
+	}
+
+	/*.PortfolioImage:first-child {
+		margin-top: 30px;
+	}*/
+
+	.third {
+		width: 100%;
+	}
+
+	.column {
+		max-width: 100%;
+	}
+}
